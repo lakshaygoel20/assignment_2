@@ -39,13 +39,13 @@ elif(age_3<age_2 and age_3<age_1):
 print('#'*15)
 #question 4
 point=float(input('enter your points(between 1-200) : '))
-if(point<0 or point>200):
+if(point=<0 or point>200):
     print('invalid points')
-if(point<=50):
+if(point<=50 and point>0  ):
     print('sorry no prize this time...')
-elif(point<=150):
+elif(point<=150 and point>0 ):
     print('congratulations!! you won a wooden dog')
-elif(point<=180):
+elif(point<=180 and point>=200 and point>0 ):
     print('congratulations!! you won a book')
 else:
     print('congratulations!! you won chocolates')
@@ -57,8 +57,8 @@ print('one unit cost Rs.100')
 unit=int(input('enter no. of units to purchase'))
 bill=float(cost*unit)
 if(unit<=0):
-    print('enter valid data..')
-if(cost<1000):
+    print(' please enter valid data..')
+if(bill>1000):
     print('your total bill before 10% discount is :Rs.',bill)
     bill=bill-(bill*0.1)
     print('your total bill after 10% discount is :Rs.',bill)
