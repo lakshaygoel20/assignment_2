@@ -59,3 +59,6 @@ for i in range(0,5):
 print('#'*15)
 #question 7
 
+dicct={'a':1,'b':2,'c':3,'d':4}
+for i in range(len(dicct)):
+    print("the elements are ",dicct[i])
